@@ -1,0 +1,15 @@
+[ 2015-04-23T13:01:45+08:00 ] ::1 /love/index.php/Home/Index/register
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+
+[ 2015-04-23T13:01:46+08:00 ] ::1 /love/index.php/Home/Index/register
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+
+[ 2015-04-23T13:02:09+08:00 ] ::1 /love/index.php/Home/Index/register
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'select FLOOR(1 + (RAND() * (SELECT MAX(id) FROM `poem`))) ) LIMIT 1' at line 1
+
+[ 2015-04-23T14:28:10+08:00 ] ::1 /love/index.php/Home/%7B$Think.server.server_name%7D
+ERR: 无法加载控制器:{$Think.server.server_name}
+
+[ 2015-04-23T14:28:12+08:00 ] ::1 /love/index.php/Home/%7B$Think.server.server_name%7D
+ERR: 无法加载控制器:{$Think.server.server_name}
+

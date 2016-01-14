@@ -1,0 +1,23 @@
+#用户表
+CREATE TABLE user (
+	id INT UNSIGNED NOT NULL AUTO_INCREMENT,
+	myname VARCHAR(50) NOT NULL,
+	taname VARCHAR(50) NOT NULL,
+	lovetime INT NOT NULL,
+	mobile VARCHAR(50) NOT NULL,
+	email VARCHAR(20)  NOT NULL,
+	url VARCHAR(32) NOT NULL ,
+	content TEXT NOT NULL,
+	time INT UNSIGNED NOT NULL,
+	PRIMARY KEY(id)
+)
+	ENGINE=InnoDB DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+
+#随机诗歌表
+	CREATE TABLE poem (
+	id INT UNSIGNED NOT NULL AUTO_INCREMENT,
+	poem TEXT NOT NULL,
+	PRIMARY KEY(id)
+)
+	ENGINE=InnoDB DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+select poem from  poem where id=(select FLOOR(1 + (RAND() * (SELECT MAX(id) FROM `poem`))));
